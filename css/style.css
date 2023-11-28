@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}   
+
+body{
+  line-height: 1.4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.card .dollar {
+  font-size: 30px;
+}
+
+.first-nav {
+  background: teal;
+
+}
+
+.main-nav {
+  background: #000;
+  color: #fff;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0.9rem;
+}
+
+.main-nav .font {
+padding-left: 52rem;
+
+}
+
+/*SHOWCASE*/
+.card {
+  border: 0.2px solid #6d6b6b;
+
+}
+.card h2 {
+  color: #fff;
+  background: #000;
+  font-size: 22px;
+  height: 80px;
+ text-align: center;
+ justify-content: center;
+ padding: 1.4rem;
+}
+
+.card ul li {
+  border: 0.2px solid #918e8e;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.card:nth-child(2) h2{
+  background:#4f4848;
+}
+
+
+
+.card button {
+  color: #fff;
+  background: teal;
+  display: block;
+  padding: 0.5rem;
+  margin:1.2rem auto;
+  width:140px ;
+  height: 50px;
+  font-size: 12px;
+  line-height:1.4 ;
+}
+
+
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1.5rem;
+  margin: 2rem;
+}
