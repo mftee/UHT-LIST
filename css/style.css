@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }   
 
+:root {
+  --secondary-color: teal ;
+  --tertiary-color: #6d6b6b; 
+}
 body{
   line-height: 1.4;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow: hidden;
+  font-size: 15px !important;
 }
 
 li {
@@ -19,8 +24,8 @@ li {
 }
 
 .first-nav {
-  background: teal;
-
+  background: var(--secondary-color);
+  padding: 0.5rem;
 }
 
 .main-nav {
@@ -36,24 +41,34 @@ li {
   padding: 0.9rem;
 }
 
+.main-nav ul li:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+
+.main-nav ul li:nth-child(6) i:hover {
+  cursor: pointer;
+  color:var(--secondary-color);
+}
+
 .main-nav .font {
 padding-left: 52rem;
-
 }
 
 /*SHOWCASE*/
 .card {
-  border: 0.2px solid #6d6b6b;
-
+  border: 0.2px solid  --tertiary-color;
 }
+
 .card h2 {
   color: #fff;
   background: #000;
   font-size: 22px;
   height: 80px;
- text-align: center;
- justify-content: center;
- padding: 1.4rem;
+  text-align: center;
+  justify-content: center;
+  padding: 1.4rem;
 }
 
 .card ul li {
@@ -70,7 +85,7 @@ padding-left: 52rem;
 
 .card button {
   color: #fff;
-  background: teal;
+  background: var(--secondary-color);
   display: block;
   padding: 0.5rem;
   margin:1.2rem auto;
@@ -78,6 +93,11 @@ padding-left: 52rem;
   height: 50px;
   font-size: 12px;
   line-height:1.4 ;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background: var(--tertiary-color);
 }
 
 
